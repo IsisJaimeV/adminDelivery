@@ -1,0 +1,46 @@
+.navLateral {
+    background-color: white;
+    border-radius: 0 10px 10px 0;
+    height: 100vh;
+}
+
+li,
+a,
+span {
+    font-family: Montserrat-Regular;
+    color: #4b4b4b;
+    text-decoration: none;
+}
+
+li:hover,
+span:hover {
+    color: #0723fc;
+}
+
+span {
+    padding: 15px;
+}
+
+.nav {
+    margin-top: 60px;
+}
+
+.container-fluid {
+    position: absolute;
+    margin-top: 2vh;
+    box-shadow: 0 .5rem 1rem rgba(159, 150, 240, 0.15)!important;
+    background-color: transparent;
+}
+
+.active {
+    background-color: #89c1f51e;
+    width: 145%;
+    margin-left: -18px;
+    border-radius: 2px;
+    a,
+    i,
+    span {
+        color: #0723fc;
+        margin-left: 8px;
+    }
+}

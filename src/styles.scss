@@ -1,1 +1,183 @@
-/* You can add global styles to this file, and also import other style files */
+/* Background */
+
+html,
+body {
+    background-color: #e9f1f8;
+}
+
+
+/* Fonts */
+
+@font-face {
+    font-family: "Montserrat-Light";
+    src: url('assets/fonts/Montserrat-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Montserrat-Regular";
+    src: url('assets/fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Montserrat-Medium";
+    src: url('assets/fonts/Montserrat-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Montserrat-Semibold";
+    src: url('assets/fonts/Montserrat-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Montserrat-Bold";
+    src: url('assets/fonts/Montserrat-Bold.ttf') format('truetype');
+}
+
+
+/* Typography */
+
+.light {
+    font-family: Montserrat-Light;
+}
+
+.regular {
+    font-family: Montserrat-Regular;
+}
+
+.medium {
+    font-family: Montserrat-Medium;
+}
+
+.semibold {
+    font-family: Montserrat-Semibold;
+}
+
+.bold {
+    font-family: Montserrat-Bold;
+}
+
+
+/* Colors */
+
+.main {
+    color: #1C1F36;
+}
+
+.gray {
+    color: #8C97B2 !important;
+}
+
+.blue {
+    color: #006CFF;
+}
+
+.red {
+    color: #FC494A;
+}
+
+
+/* Inputs */
+
+$primary: #006CFF;
+$secondary: #2c80f7;
+$white: #fff;
+$gray: #9b9b9b;
+.form__group {
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 14px;
+}
+
+.form__field {
+    font-family: Montserrat-Light;
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid $gray;
+    outline: 0;
+    font-size: 13px;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+    &::placeholder {
+        color: transparent;
+    }
+    &:placeholder-shown~.form__label {
+        font-family: Montserrat-Regular;
+        font-size: 14px;
+        cursor: text;
+        top: 25px;
+    }
+}
+
+.form__label {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    display: block;
+    transition: 0.2s;
+    font-size: 14px;
+    color: $gray;
+}
+
+.form__field:focus {
+    ~.form__label {
+        position: absolute;
+        top: 0;
+        display: block;
+        transition: 0.2s;
+        font-size: 14px;
+        color: $primary;
+        font-weight: 700;
+    }
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 1px;
+    border-image: linear-gradient(to right,
+    $primary,
+    $secondary);
+    border-image-slice: 1;
+}
+
+
+/* reset input */
+
+.form__field {
+    &:required,
+    &:invalid {
+        box-shadow: none;
+    }
+}
+
+
+/* contenedorGeneral */
+
+.contenedorGeneral {
+    margin-top: 20px;
+    position: absolute;
+    right: 0;
+    background-color: red;
+}
+
+@media (max-width:400px) {
+    .contenedorGeneral {
+        width: 83% !important;
+    }
+}
+
+@media (max-width:540px) {
+    .ccontenedorGeneral {
+        width: 87% !important;
+    }
+}
+
+@media (max-width:820px) {
+    .ccontenedorGeneral {
+        width: 73%;
+    }
+}
+
+@media (min-width:1000px) {
+    .contenedorGeneral {
+        width: 83%;
+    }
+}
