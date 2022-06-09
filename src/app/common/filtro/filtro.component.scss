@@ -1,0 +1,19 @@
+.filtros {
+    font-family: Montserrat-Regular;
+    font-size: 15px;
+}
+
+.form-select-inline {
+    border-color: transparent;
+    border-radius: 20px;
+    margin-top: 5px;
+    margin-left: 20px;
+    padding: 6px;
+    box-shadow: 0 .5rem 1rem rgba(159, 150, 240, 0.15);
+    border: none;
+}
+
+.form-select-inline:focus {
+    outline: none;
+    border: none;
+}

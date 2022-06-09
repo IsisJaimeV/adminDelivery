@@ -1,6 +1,9 @@
 .navbar {
     background-color: white;
     box-shadow: 0 .5rem 1rem rgba(159, 150, 240, 0.15)!important;
+    position: fixed;
+    z-index: 999;
+    width: 100vw;
 }
 
 .img-logo {

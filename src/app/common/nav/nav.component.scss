@@ -1,7 +1,9 @@
 .navLateral {
+    position: fixed;
     background-color: white;
     border-radius: 0 10px 10px 0;
     height: 100vh;
+    margin-top: 90px;
 }
 
 li,
@@ -25,10 +27,13 @@ span {
     margin-top: 60px;
 }
 
+.col-auto {
+    box-shadow: 0 .5rem 1rem rgba(159, 150, 240, 0.15)!important;
+}
+
 .container-fluid {
     position: absolute;
     margin-top: 2vh;
-    box-shadow: 0 .5rem 1rem rgba(159, 150, 240, 0.15)!important;
     background-color: transparent;
 }
 

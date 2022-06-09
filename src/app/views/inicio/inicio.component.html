@@ -2,22 +2,285 @@
 <app-nav></app-nav>
 <div class="contenedorGeneral">
     <div class="row">
-        <div class="col">
-            1 of 2
-        </div>
-        <div class="col">
-            2 of 2
+        <div class="col paginacion">
+            <p>Inicio </p><i class="fa fa-angle-right"></i>
         </div>
     </div>
-    <div class="row">
+    <div class="row bienvenida">
         <div class="col">
-            1 of 3
+            Buenos días, Diana
         </div>
         <div class="col">
-            2 of 3
-        </div>
-        <div class="col">
-            3 of 3
+            <app-filtro></app-filtro>
         </div>
     </div>
+
+    <!-- Operaciones -->
+    <div class="row apartados">
+        <div class="col tituloApartados">
+            <p>Operaciones </p> <i class="fa fa-info-circle"></i>
+        </div>
+    </div>
+    <div class="row operaciones">
+        <div class="col me-4 rounded detallesOperaciones">
+            <div class="row">
+                <div class="col">
+                    <p>Pedidos perdidos </p><i class="fa fa-info-circle"></i>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-md-4">
+                    <p class="kpiPerdidos">13</p>
+                </div>
+                <div class="col-md-8">
+                    <img src="../../../assets/img/temp/grafica 1.png">
+                </div>
+            </div>
+            <div class="row detalles">
+                <div class="col-md-2 kpiPorcentajeBajada">
+                    <p>1.8%</p><i class="fa fa-long-arrow-down"></i>
+                </div>
+                <div class="col-md-10">
+                    <p class="kpiDetalles">Que el periodo pasado</p>
+                </div>
+            </div>
+        </div>
+        <div class="col me-4 rounded detallesOperaciones">
+            <div class="row">
+                <div class="col">
+                    <p>Pedidos cancelados </p><i class="fa fa-info-circle"></i>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-md-4">
+                    <p class="kpiCancelados">5</p>
+                </div>
+                <div class="col-md-8">
+                    <img src="../../../assets/img/temp/grafica 2.png">
+                </div>
+            </div>
+            <div class="row detalles">
+                <div class="col-md-2 kpiPorcentajeBajada">
+                    <p>1.9%</p><i class="fa fa-long-arrow-down"></i>
+                </div>
+                <div class="col-md-10">
+                    <p class="kpiDetalles">Que el periodo pasado</p>
+                </div>
+            </div>
+        </div>
+        <div class="col me-4 rounded detallesOperaciones">
+            <div class="row">
+                <div class="col">
+                    <p>Pedidos reembolsados </p><i class="fa fa-info-circle"></i>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-md-4">
+                    <p class="kpiReembolsados">1</p>
+                </div>
+                <div class="col-md-8">
+                    <img src="../../../assets/img/temp/grafica 3.png">
+                </div>
+            </div>
+            <div class="row detalles">
+                <div class="col-md-2 kpiPorcentajeSubida">
+                    <p>2.5%</p><i class="fa fa-long-arrow-up"></i>
+                </div>
+                <div class="col-md-10">
+                    <p class="kpiDetalles">Que el periodo pasado</p>
+                </div>
+            </div>
+        </div>
+        <div class="col me-4 rounded detallesOperaciones">
+            <div class="row">
+                <div class="col">
+                    <p>Tiempo inactividad </p><i class="fa fa-info-circle"></i>
+                </div>
+            </div>
+            <div class="row align-items-center tiempo">
+                <div class="col">
+                    <p class="kpiTiempo">280 h 53 m</p>
+                </div>
+            </div>
+            <div class="row detalles">
+                <div class="col-md-2 kpiPorcentajeBajada">
+                    <p>1.8%</p><i class="fa fa-long-arrow-down"></i>
+                </div>
+                <div class="col-md-10">
+                    <p class="kpiDetalles">Que el periodo pasado</p>
+                </div>
+            </div>
+        </div>
+        <div class="col rounded detallesOperaciones">
+            <div class="row">
+                <div class="col">
+                    <p>Negocios inactivos </p><i class="fa fa-info-circle"></i>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-md-4 kpiInactivos">
+                    <p class="">2</p><i class="fa fa-wifi"></i>
+                </div>
+                <div class="col-md-8">
+                    <img src="../../../assets/img/temp/grafica 4.png">
+                </div>
+            </div>
+            <div class="row detalles">
+                <div class="col kpiAtencion">
+                    <p>Requiere atención</p><i class="fa fa-angle-right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Analisis de datos de ventas y opiniones-->
+    <div class="row analisis mt-5">
+        <div class="col-md-8 me-4">
+            <div class="row">
+                <div class="titulos">
+                    <p>Análisis de datos de ventas </p> <i class="fa fa-info-circle"></i>
+                </div>
+                <div class="col detallesAnalisis rounded detallesAnalisisGraficas">
+                    <nav>
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Ventas totales <i class="fa fa-info-circle"></i></button>
+                            <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Volumen de pedidos <i class="fa fa-info-circle"></i></button>
+                            <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Valor de recibos <i class="fa fa-info-circle"></i></button>
+                        </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"><img src="../../../assets/img/temp/analisis.png" alt=""></div>
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"><img src="../../../assets/img/temp/analisis.png" alt=""></div>
+                        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab"><img src="../../../assets/img/temp/analisis.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="row">
+                <div class="titulos">
+                    <p>Análisis de datos de ventas </p> <i class="fa fa-info-circle"></i>
+                </div>
+                <div class="col rounded detallesAnalisis">
+                    <div>
+                        <p>Reseña de los clientes </p><i class="fa fa-info-circle"></i>
+                        <h2>28</h2>
+                        <hr>
+                    </div>
+                    <div>
+                        <p>Esperando respuesta </p><i class="fa fa-info-circle"></i>
+                        <h2>19</h2>
+                        <hr>
+                    </div>
+                    <div>
+                        <p>Revisa las ofertas canjeadas </p><i class="fa fa-info-circle"></i>
+                        <h2>0</h2>
+                        <hr>
+                    </div>
+                    <div>
+                        <p>Revisa el ROI de las ofertas </p><i class="fa fa-info-circle"></i>
+                        <h2>--</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Articulos mas vendidos y ventas por categorias -->
+    <div class="row articulos mt-5">
+        <div class="col-md-7 me-4">
+            <div class="row">
+                <div class="titulos">
+                    <p>Artículos más vendidos </p> <i class="fa fa-info-circle"></i>
+                </div>
+                <div class="col detallesArticulos rounded">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Ranking</th>
+                                <th scope="col">Artículo</th>
+                                <th scope="col">Restaurante</th>
+                                <th scope="col"># de pedidos</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Cono kanikama por pieza</td>
+                                <td>Chowa San Ángel</td>
+                                <td>39 pedidos</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Cono kanikama por pieza</td>
+                                <td>Chowa San Ángel</td>
+                                <td>39 pedidos</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Cono kanikama por pieza</td>
+                                <td>Chowa San Ángel</td>
+                                <td>18 pedidos</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>Cono kanikama por pieza</td>
+                                <td>Chowa San Ángel</td>
+                                <td>39 pedidos</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>Cono kanikama por pieza</td>
+                                <td>Chowa San Ángel</td>
+                                <td>39 pedidos</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">6</th>
+                                <td>Cono kanikama por pieza</td>
+                                <td>Chowa San Ángel</td>
+                                <td>18 pedidos</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button type="button" class="btn btn-primary float-right" data-toggle="button">
+                        Descargar
+                      </button>
+
+                </div>
+            </div>
+        </div>
+        <div class="col mb-5">
+            <div class="row">
+                <div class="titulos">
+                    <p>Ventas por categoría </p> <i class="fa fa-info-circle"></i>
+                </div>
+                <div class="col rounded detallesArticulos">
+                    <div class="text-center">
+                        <img src="../../../assets/img/temp/graficaRedonda.png" alt="">
+                    </div>
+                    <div>
+                        <div class="detallesVentas">
+                            <div class="categoria">
+                                <canvas class="color1"></canvas>
+                                <p>Desayunos</p><br>
+                            </div>
+                            <div class="categoria">
+                                <canvas class="color2"></canvas>
+                                <p>Comidas</p><br>
+                            </div>
+                            <div class="categoria">
+                                <canvas class="color3"></canvas>
+                                <p>Bebidas</p><br>
+                            </div>
+                            <div class="categoria">
+                                <canvas class="color4"></canvas>
+                                <p>Postres</p><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>

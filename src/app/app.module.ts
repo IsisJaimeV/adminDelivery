@@ -8,6 +8,8 @@ import { InicioComponent } from './views/inicio/inicio.component';
 import { NotFoundComponent } from './views/not-found/not-found.component';
 import { NavComponent } from './common/nav/nav.component';
 import { HeaderComponent } from './common/header/header.component';
+import { FiltroComponent } from './common/filtro/filtro.component';
+import { PedidosComponent } from './views/pedidos/pedidos.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { HeaderComponent } from './common/header/header.component';
     InicioComponent,
     NotFoundComponent,
     NavComponent,
-    HeaderComponent
+    HeaderComponent,
+    FiltroComponent,
+    PedidosComponent
   ],
   imports: [
     BrowserModule,
